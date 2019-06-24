@@ -1,0 +1,280 @@
+@mixin myButton {
+    background-color: $btnColor;
+    color: white;
+    width: 125px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+}
+
+$fonts:(source : 'Source Sans Pro',
+hind: 'Hind',
+fresca: 'Fresca'
+);
+
+body {
+    background-color: $bgColors;
+    margin: 0 auto;
+
+    header {
+        background: $headerBg;
+        background-size: $bgSize;
+        height: $headerHeight;
+        border-bottom-right-radius: $bgRadius;
+        width: 100%;
+
+        .header-wrap {
+            width: 45%;
+            padding-left: 10%;
+
+            .landing-logo {
+                padding-top: 10px;
+                display: flex;
+                font-family: map-get($fonts, source), sans-serif;
+                font-weight: bold;
+
+                p {
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    flex-direction: row;
+                    font-size: 22px;
+                    text-align: center;
+                    color: $fontHeaderColor;
+
+                    span {
+                        font-size: 10px;
+                        display: block;
+
+                    }
+                }
+            }
+
+            .header_heading {
+                font-size: 62px;
+                font-family: map-get($fonts, source), sans-serif;
+                font-weight: bold;
+                margin-top: 45px;
+                line-height: 1;
+                position: relative;
+                z-index: 1;
+                color: $fontHeaderColor;
+
+                &::before {
+                    content: '';
+                    background-color: $underLineColor;
+                    display: block;
+                    height: 25px;
+                    width: 43%;
+                    z-index: -1;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+
+            .header_text {
+                font-family: map-get($fonts, hind), sans-serif;
+                font-size: 14px;
+                margin-top: -35px;
+                color: $fontHeaderColor;
+                white-space: pre-line;
+            }
+
+            .header_button {
+                margin-top: 30px;
+                @include myButton();
+                font-family: map-get($fonts, fresca), sans-serif;
+            }
+        }
+    }
+}
+
+img {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    flex-direction: row;
+}
+
+.section_text {
+    text-align: center;
+    font-size: 34px;
+    font-family: map-get($fonts, hind), sans-serif;
+    font-weight: bold;
+    color: $fontHeaderColor;
+    z-index: 1;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: $underLineColor;
+        display: block;
+        height: 15px;
+        width: 12%;
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        margin-left: 51%;
+        margin-bottom: 14px;
+    }
+}
+
+.section_card_wrap {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .section_card {
+        background-color: $cardColor;
+        margin-right: 15px;
+        padding: 15px 15px 0 15px;
+        align-items: center;
+        width: 25%;
+        text-align: center;
+        border-radius: 5px;
+
+        .section_card_img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .section_card_heading {
+            color: $cardTextColor;
+            font-family: map-get($fonts, source), sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+
+            .section_card_underline {
+                height: 12px;
+                width: 100%;
+                background-color: $underLineColor;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 15px;
+                z-index: -1;
+            }
+        }
+
+        .section_card_text {
+            color: $cardTextColor;
+            font-family: map-get($fonts, source), sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+main.section {
+    text-align: center;
+
+    .section_banner {
+        width: 840px;
+        display: flex;
+        justify-content: space-around;
+        background: $gradient;
+        height: 125px;
+        border-radius: 5px;
+        align-items: center;
+        bottom: -62.5px;
+        margin-left: 19%;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+
+        .section_banner_heading {
+            font-size: 24px;
+            font-family: map-get($fonts, source), sans-serif;
+            font-weight: bold;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            color: $fontHeaderColor;
+
+            &::after {
+                content: '';
+                background-color: $underLineColor;
+                display: block;
+                height: 15px;
+                width: 6%;
+                z-index: -1;
+                position: absolute;
+                bottom: 75px;
+                left: 195px;
+            }
+        }
+
+        .section_banner_text {
+            font-family: map-get($fonts, hind), sans-serif;
+            color: $cardTextColor;
+        }
+    }
+
+    .section_banner_button {
+        @include myButton();
+    }
+}
+
+footer {
+    display: flex;
+    background-color: $cardColor;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+
+    .footer-wrap {
+        max-width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 70px;
+
+        .footer_logo {
+            display: flex;
+            font-family: map-get($fonts, source), sans-serif;
+            font-weight: bold;
+            margin-right: 250px;
+
+            img {
+                @extend img;
+            }
+
+            p {
+                margin-top: 5px;
+                margin-left: 10px;
+                flex-direction: row;
+                font-size: 22px;
+                text-align: center;
+                color: rgb(189, 192, 204);
+
+                span {
+                    font-size: 10px;
+                    display: block;
+                }
+            }
+        }
+
+        .footer_text {
+            width: 270px;
+            height: max-content;
+            font-family: map-get($fonts, source), sans-serif;
+            color: rgb(189, 192, 204);
+            font-size: 12px;
+            line-height: 1.5;
+            margin-right: 300px;
+        }
+
+        .footer-cr {
+            height: max-content;
+            font-family: map-get($fonts, source), sans-serif;
+            color: rgb(189, 192, 204);
+            font-size: 14px;
+        }
+    }
+}
