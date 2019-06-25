@@ -215,6 +215,7 @@ main.section {
 
     .section_banner_button {
         @include myButton();
+        font-family: map-get($fonts, fresca), sans-serif;
     }
 }
 
