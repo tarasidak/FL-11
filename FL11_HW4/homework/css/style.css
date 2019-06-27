@@ -1,0 +1,383 @@
+body {
+    margin: 0px;
+    min-width: 900px;
+    font-family: 'Open Sans';
+}
+
+header {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #F3F3F3;
+    height: 950px;
+}
+
+.headerSec {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    height: 950px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+}
+
+.headerPhoto {
+    background-image: url(../img/sample2.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+header div.navig {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+header div.navig .logo {
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header div.navig .navigation a {
+    padding-right: 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .brand {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+header .brand h1 span {
+    font-size: 90px;
+}
+
+header .brand .paragraf2 {
+    display: block;
+    font-size: 20px;
+}
+
+header .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+header .buttons button {
+    width: 180px;
+    height: 40px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+header .paragHead {
+    width: 50%;
+    float: right;
+    margin-top: 110px;
+    padding-bottom: 10px;
+}
+
+header .paragHead p {
+    width: 80%;
+    margin-left: 20px;
+}
+
+main .articles {
+    background-color: #F3F3F3;
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    height: 1070px;
+}
+
+main .articles .textHead {
+    width: 50%;
+    float: left;
+    margin-top: -130px;
+}
+
+main .articles .paragSec {
+    color: black;
+    font-size: 22px;
+}
+
+main .articles .paragSec {
+    width: 80%;
+    margin-left: 40px;
+}
+
+main .articles .heading {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.articles .firstArticle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.articles .secondArticle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.articles .firstArticle .imgFirst {
+    background: url(../img/sample-1.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-left: 40px;
+    height: 400px;
+}
+
+.articles .firstArticle .firstText {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.articles .firstArticle .firstText p {
+    width: 90%;
+    float: right;
+    padding-bottom: 2ch;
+    font-size: 16px;
+}
+
+.articles .secondArticle .imgSecond {
+    background: url(../img/sample-2.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-right: 40px;
+    height: 400px;
+}
+
+.articles .secondArticle .secondText {
+    width: 50%;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.articles .secondArticle .secondText p {
+    font-size: 16px;
+    padding-bottom: 3ch;
+    width: 90%;
+    float: left;
+}
+
+.bottom-left {
+    position: absolute;
+    margin: auto;
+    color: #ffffff;
+    font-size: 12px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.top-right {
+    position: absolute;
+    color: #F3F3F3;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 2px solid #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    right: 20px;
+    top: 20px;
+}
+
+.myButton {
+    position: absolute;
+    color: #F3F3F3;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: rgba(9, 119, 116, 0.7);
+    top: 50%;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.wrap .imgOne {
+    background: url(../img/news-list-1.jpg) 100% 100%;
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+.wrap .imgTwo {
+    background: url(../img/news-list-2.jpg) 100% 100%;
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+.wrap .imgThree {
+    background: url(../img/news-list-3.jpg) 100% 100%;
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+.wrap .imgFour {
+    background: url(../img/news-list-4.jpg) 100% 100%;
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+.explore {
+    padding-bottom: 50px;
+}
+
+.explore .myBigbutton {
+    margin-top: 50px;
+
+}
+
+.explore .bigButton {
+    color: #F3F3F3;
+    font-size: 16px;
+    padding: 5px 10px;
+    background: rgba(9, 119, 116, 0.7);
+    width: 30%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 35%;
+}
+
+footer .myFooter {
+    background-color: #F3F3F3;
+    width: 95%;
+    margin-left: 2.5%;
+    padding-top: 20px;
+}
+
+footer .myFooter .footerText {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+footer .myFooter .form1 {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    background: #F3F3F3;
+    height: 110px;
+    margin: 40px 0;
+}
+
+footer .myFooter .form1 p {
+    margin-left: 750px;
+}
+
+footer .myFooter form button {
+    color: #F3F3F3;
+    font-size: 12px;
+    padding: 10px 15px;
+    background: rgb(9, 119, 116);
+    border: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .myFooter form input {
+    background-color: #f3f3f3;
+    border: 1px solid #000000;
+    padding: 10px 15px;
+}
+
+::placeholder {
+    color: #000;
+}
+
+div.bottom-menu {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+div.bottom-menu p {
+    font-size: 12px;
+    color: #9E9E9E;
+    width: 150px;
+    float: left;
+}
+
+div.bottom-menu div {
+    margin: 0 0 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+}
+
+div.bottom-menu div a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 1339px) {
+    footer .myFooter .form1 p {
+        margin-left: 650px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1236px) {
+    footer .myFooter .form1 p {
+        margin-left: 550px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    footer .myFooter .form1 p {
+        margin-left: 450px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer .myFooter .form1 p {
+        margin-left: 350px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 919px) {
+    footer .myFooter .form1 p {
+        margin-left: 300px;
+        margin-right: 5px;
+    }
+}
